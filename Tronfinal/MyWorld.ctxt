@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment0.text=\r\n\ This\ is\ my\ final\ Greenfoot\ project\ of\ thus\ unit.\ I\ created\ Tron\ Lightbike\r\n\ \r\n\ @author\ Kaden\r\n\ @version\ V1\ 2019\r\n
+comment1.params=
+comment1.target=MyWorld()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ makes\ the\ text\ of\ the\ middle\ of\ the\ world\ dissapear\ before\ the\ game\ starts\r\n\ \r\n\ @param\ None\r\n\ @return\ none\r\n
+comment3.params=
+comment3.target=void\ gridBackground()
+comment3.text=\r\n\ gridBackgroubd\ creates\ the\ background\ of\ the\ world\ which\ is\ a\ grid\r\n\ \r\n\ @param\ none\r\n\ @return\ none\r\n
+comment4.params=
+comment4.target=void\ startText()
+comment4.text=\r\n\ shows\ the\ text\ but\ was\ also\ supposed\ to\ disable\ the\ text\ when\ game\ started\r\n\ \r\n\ @param\ none\r\n\ @return\ none\r\n
+comment5.params=
+comment5.target=void\ addPlayers()
+comment5.text=\r\n\ This\ bit\ of\ code\ adds\ the\ players\ to\ the\ world\r\n\ \r\n\ @param\ none\r\n\ @return\ none\r\n
+comment6.params=
+comment6.target=void\ startGame()
+comment7.params=
+comment7.target=void\ update()
+numComments=8

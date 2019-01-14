@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Lineplayer2
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Lineplayer2\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Lineplayer2()
+comment1.text=\r\n\ This\ bit\ makes\ the\ line\ the\ same\ size\ as\ the\ player\r\n\ \r\n\ @param\ no\ params\r\n\ @return\ no\ returns\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ This\ bit\ makes\ the\ line\ not\ kill\ the\ player\ its\ attached\ to\ instantly\r\n\ \r\n\ @param\ n/a\r\n\ @return\ n/a\r\n
+numComments=3
