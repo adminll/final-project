@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Lineplayer2 here.
+ * Line of player2
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kaden 
+ * @version V2 Year 2019
  */
 public class Lineplayer2 extends Actor
 {
@@ -21,7 +21,6 @@ public class Lineplayer2 extends Actor
     {
         getImage().scale(10,10);
     }
-    
     
     /**
      * This bit makes the line not kill the player its attached to instantly

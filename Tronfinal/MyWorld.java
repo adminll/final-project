@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * This is my final Greenfoot project of thus unit. I created Tron Lightbike
  * 
  * @author Kaden
- * @version V1 2019
+ * @version V1 Year 2019
  */
 public class MyWorld extends greenfoot.World
 {
@@ -62,6 +62,7 @@ public class MyWorld extends greenfoot.World
     private void gridBackground()
     {
         //Fills the background with a blackbox
+        getBackground().setColor(Color.BLACK);
         getBackground().fillRect(0,0,getWidth(),getHeight());
         
         //sets the grid color to gray
@@ -124,7 +125,6 @@ public class MyWorld extends greenfoot.World
         {
             Greenfoot.start();
             startingText = false;
-            
         }
     }
     

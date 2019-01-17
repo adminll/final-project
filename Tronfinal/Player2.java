@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Player2 here.
+ * Player2 of tron
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kaden 
+ * @version V3 Year 2019
  */
 public class Player2 extends Actor
 {
@@ -17,7 +17,6 @@ public class Player2 extends Actor
     //Starts to move the characters when true
     private boolean isStarted = false;
     
-    
     /**
      * Sets the size of the lightbike
      * 
@@ -27,7 +26,6 @@ public class Player2 extends Actor
     {
         getImage().scale(10,10);
     }
-    
     
     /**
      * Act - do whatever the Player2 wants to do. This method is called whenever
@@ -50,22 +48,22 @@ public class Player2 extends Actor
         }
         
         //all four of these move the character
-        if(uIsDown == true)
+        if(uIsDown == true && isStarted == true)
         {
             setLocation(getX(),getY()-4);
         }
         
-        if(lIsDown == true)
+        if(lIsDown == true && isStarted == true)
         {
             setLocation(getX()-4,getY());
         }
         
-        if(dIsDown == true)
+        if(dIsDown == true && isStarted == true)
         {
             setLocation(getX(),getY()+4);
         }
         
-        if(rIsDown == true)
+        if(rIsDown == true && isStarted == true)
         {
             setLocation(getX()+4,getY());
         }

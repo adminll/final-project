@@ -18,7 +18,7 @@ public class Scoreboard extends Actor
         win = 0;
         GreenfootImage img = new GreenfootImage(150,30);
         img.setFont( myFont );
-        img.drawString(" " + win, 5,25);
+        img.drawString(" ", 5,25);
         setImage(img);
     }
 

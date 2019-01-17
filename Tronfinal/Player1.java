@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Player1 here.
+ * Player1 of tron
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kaden 
+ * @version V3 Year 2019
  */
 public class Player1 extends Actor
 {
@@ -16,7 +16,6 @@ public class Player1 extends Actor
     
     //Starts to move the characters when true
     private boolean isStarted = false;
-    
     
     /**
      * Sets the size of the lightbike
@@ -48,23 +47,23 @@ public class Player1 extends Actor
             getWorld().addObject(new Lineplayer1(),getX(),getY());
         }
         
-        //all four of these move the character
-        if(wIsDown == true)
+        //all four of these move the character when a key is down plus the game is started
+        if(wIsDown == true && isStarted == true)
         {
             setLocation(getX(),getY()-4);
         }
         
-        if(aIsDown == true)
+        if(aIsDown == true && isStarted == true)
         {
             setLocation(getX()-4,getY());
         }
         
-        if(sIsDown == true)
+        if(sIsDown == true && isStarted == true)
         {
             setLocation(getX(),getY()+4);
         }
         
-        if(dIsDown == true)
+        if(dIsDown == true & isStarted == true)
         {
             setLocation(getX()+4,getY());
         }

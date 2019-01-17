@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Lineplayer1 here.
+ * Line of player1
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kaden 
+ * @version V2 Year 2019
  */
 public class Lineplayer1 extends Actor
 {
@@ -29,7 +29,6 @@ public class Lineplayer1 extends Actor
      * @return n/a
      */
     public void act() 
-    
     {
         //loopcount adds up
         Loopcount++;
@@ -49,7 +48,5 @@ public class Lineplayer1 extends Actor
             Greenfoot.stop();
             ((MyWorld)getWorld()).update();
         }
-        
-        
     }    
 }
