@@ -17,6 +17,12 @@ public class Player2 extends Actor
     //Starts to move the characters when true
     private boolean isStarted = false;
     
+    //booleans that are used to stop making you die when you got backwards
+    private boolean isPressedW = false;
+    private boolean isPressedA = false;
+    private boolean isPressedS = false;
+    private boolean isPressedD = false;
+    
     /**
      * Sets the size of the lightbike
      * 
@@ -47,25 +53,41 @@ public class Player2 extends Actor
             getWorld().addObject(new Lineplayer2(),getX(),getY());
         }
         
-        //all four of these move the character
+        //all four of these move the character when a key is down plus the game is started && sets the "not die when go backwards" booleans to true or false depending on the key that is pressed
         if(uIsDown == true && isStarted == true)
         {
             setLocation(getX(),getY()-4);
+            isPressedW = false;
+            isPressedA = false;
+            isPressedS = true;
+            isPressedD = false;
         }
         
         if(lIsDown == true && isStarted == true)
         {
             setLocation(getX()-4,getY());
+            isPressedW = false;
+            isPressedA = false;
+            isPressedS = false;
+            isPressedD = true;
         }
         
         if(dIsDown == true && isStarted == true)
         {
             setLocation(getX(),getY()+4);
+            isPressedW = true;
+            isPressedA = false;
+            isPressedS = false;
+            isPressedD = false;
         }
         
         if(rIsDown == true && isStarted == true)
         {
             setLocation(getX()+4,getY());
+            isPressedW = false;
+            isPressedA = true;
+            isPressedS = false;
+            isPressedD = false;
         }
     }    
     
@@ -77,8 +99,8 @@ public class Player2 extends Actor
      */
     private void isARROWDown()
     {
-        //all four below are assigned keys to make the chatacter move
-        if(Greenfoot.isKeyDown("up"))
+        //all four below are assigned keys to make the chatacter move && makes the player not move when a key is pressed
+        if(Greenfoot.isKeyDown("up") && isPressedW == false)
         {
             uIsDown = true;
             lIsDown = false;
@@ -86,7 +108,7 @@ public class Player2 extends Actor
             rIsDown = false;
         }
         
-        if(Greenfoot.isKeyDown("left"))
+        if(Greenfoot.isKeyDown("left") && isPressedA == false)
         {
             uIsDown = false;
             lIsDown = true;
@@ -94,7 +116,7 @@ public class Player2 extends Actor
             rIsDown = false;
         }
         
-        if(Greenfoot.isKeyDown("down"))
+        if(Greenfoot.isKeyDown("down") && isPressedS == false)
         {
             uIsDown = false;
             lIsDown = false;
@@ -102,7 +124,7 @@ public class Player2 extends Actor
             rIsDown = false;
         }
         
-        if(Greenfoot.isKeyDown("right"))
+        if(Greenfoot.isKeyDown("right") && isPressedD == false)
         {
             uIsDown = false;
             lIsDown = false;

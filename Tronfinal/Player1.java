@@ -17,6 +17,12 @@ public class Player1 extends Actor
     //Starts to move the characters when true
     private boolean isStarted = false;
     
+    //booleans that are used to stop making you die when you got backwards
+    private boolean isPressedW = false;
+    private boolean isPressedA = false;
+    private boolean isPressedS = false;
+    private boolean isPressedD = false;
+    
     /**
      * Sets the size of the lightbike
      * 
@@ -47,26 +53,58 @@ public class Player1 extends Actor
             getWorld().addObject(new Lineplayer1(),getX(),getY());
         }
         
-        //all four of these move the character when a key is down plus the game is started
+        //all four of these move the character when a key is down plus the game is started && sets the "not die when go backwards" booleans to true or false depending on the key that is pressed
+        
+        
         if(wIsDown == true && isStarted == true)
         {
             setLocation(getX(),getY()-4);
+            isPressedW = false;
+            isPressedA = false;
+            isPressedS = true;
+            isPressedD = false;
         }
+        
+        
         
         if(aIsDown == true && isStarted == true)
         {
             setLocation(getX()-4,getY());
+            isPressedW = false;
+            isPressedA = false;
+            isPressedS = false;
+            isPressedD = true;
         }
+        
+        
+        
         
         if(sIsDown == true && isStarted == true)
         {
             setLocation(getX(),getY()+4);
+            isPressedW = true;
+            isPressedA = false;
+            isPressedS = false;
+            isPressedD = false;
         }
         
-        if(dIsDown == true & isStarted == true)
+        
+        
+        
+        if(dIsDown == true && isStarted == true)
         {
             setLocation(getX()+4,getY());
+            isPressedW = false;
+            isPressedA = true;
+            isPressedS = false;
+            isPressedD = false;
         }
+        
+        
+        //if(dIsDown == true & isStarted == true)
+        //{
+        //    setLocation(getX()+4,getY());
+        //}
     }    
     
     /**
@@ -77,37 +115,45 @@ public class Player1 extends Actor
      */
     private void isWASDDown()
     {
-        //all four below are assigned keys to make the chatacter move
-        if(Greenfoot.isKeyDown("w"))
+        //all four below are assigned keys to make the chatacter move && makes the player not move when a key is pressed
+        if(Greenfoot.isKeyDown("w") && isPressedW == false)
         {
             wIsDown = true;
             aIsDown = false;
             sIsDown = false;
             dIsDown = false;
+            //
+            
         }
         
-        if(Greenfoot.isKeyDown("a"))
+        if(Greenfoot.isKeyDown("a") && isPressedA == false)
         {
             wIsDown = false;
             aIsDown = true;
             sIsDown = false;
             dIsDown = false;
+            //
+            
         }
         
-        if(Greenfoot.isKeyDown("s"))
+        if(Greenfoot.isKeyDown("s") && isPressedS == false)
         {
             wIsDown = false;
             aIsDown = false;
             sIsDown = true;
             dIsDown = false;
+            //
+            
         }
         
-        if(Greenfoot.isKeyDown("d"))
+        if(Greenfoot.isKeyDown("d") && isPressedD == false)
         {
             wIsDown = false;
             aIsDown = false;
             sIsDown = false;
             dIsDown = true;
+            //
+            
         }
         
         //makes the character move forward while spawning the line behind the character
@@ -118,6 +164,8 @@ public class Player1 extends Actor
             sIsDown = false;
             dIsDown = true;
             isStarted = true;
+            //
+            isPressedA = true;
         }
     }
     
