@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=Scoreboard
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Scoreboard\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Taken\ from\ a\ prevoius\ assignment\ to\ add\ into\ this\ game\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Scoreboard()
+comment1.text=\r\n\ Sets\ win\ to\ 0,\ creates\ the\ "invisible\ score"\ in\ the\ corner,\ sets\ the\ font\ to\ myFont\ and\ draws\ the\ image\ in\ the\ corner\r\n\ \r\n\ @param\ none\r\n
 comment2.params=
 comment2.target=void\ addToScore()
+comment2.text=\r\n\ Makes\ win\ count\ up,\ sets\ img\ to\ clear\ from\ the\ screen\ (even\ though\ its\ not\ there)\r\n\ \r\n\ @param\ none\r\n
 numComments=3
