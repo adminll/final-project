@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Player1 of tron
  * 
  * @author Kaden 
- * @version V3 Year 2019
+ * @version V4 Year 2019 (Bug fixes and commenting)
  */
 public class Player1 extends Actor
 {
@@ -100,7 +100,7 @@ public class Player1 extends Actor
             isPressedD = false;
         }
         
-        
+        //Below is for backup just incase something goes oopsy
         //if(dIsDown == true & isStarted == true)
         //{
         //    setLocation(getX()+4,getY());
@@ -122,8 +122,6 @@ public class Player1 extends Actor
             aIsDown = false;
             sIsDown = false;
             dIsDown = false;
-            //
-            
         }
         
         if(Greenfoot.isKeyDown("a") && isPressedA == false)
@@ -132,8 +130,6 @@ public class Player1 extends Actor
             aIsDown = true;
             sIsDown = false;
             dIsDown = false;
-            //
-            
         }
         
         if(Greenfoot.isKeyDown("s") && isPressedS == false)
@@ -142,8 +138,6 @@ public class Player1 extends Actor
             aIsDown = false;
             sIsDown = true;
             dIsDown = false;
-            //
-            
         }
         
         if(Greenfoot.isKeyDown("d") && isPressedD == false)
@@ -152,8 +146,6 @@ public class Player1 extends Actor
             aIsDown = false;
             sIsDown = false;
             dIsDown = true;
-            //
-            
         }
         
         //makes the character move forward while spawning the line behind the character
@@ -164,7 +156,8 @@ public class Player1 extends Actor
             sIsDown = false;
             dIsDown = true;
             isStarted = true;
-            //
+            
+            //???
             isPressedA = true;
         }
     }

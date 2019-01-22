@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Player2 of tron
  * 
  * @author Kaden 
- * @version V3 Year 2019
+ * @version V4 Year 2019 (Bug fixes and commenting)
  */
 public class Player2 extends Actor
 {

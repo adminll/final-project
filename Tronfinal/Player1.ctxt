@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Player1
-comment0.text=\r\n\ Player1\ of\ tron\r\n\ \r\n\ @author\ Kaden\ \r\n\ @version\ V3\ Year\ 2019\r\n
+comment0.text=\r\n\ Player1\ of\ tron\r\n\ \r\n\ @author\ Kaden\ \r\n\ @version\ V4\ Year\ 2019\ (Bug\ fixes\ and\ commenting)\r\n
 comment1.params=
 comment1.target=Player1()
 comment1.text=\r\n\ Sets\ the\ size\ of\ the\ lightbike\r\n\ \r\n\ @param\ none\r\n
