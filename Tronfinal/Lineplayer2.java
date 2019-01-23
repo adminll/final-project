@@ -46,7 +46,7 @@ public class Lineplayer2 extends Actor
         {
             removeTouching(Player2.class); 
             Greenfoot.stop();
-            ((MyWorld)getWorld()).update();
+            ((MyWorld)getWorld()).updated();
         }
     }    
 }

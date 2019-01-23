@@ -13,6 +13,7 @@ public class MyWorld extends greenfoot.World
     
     //sets Scoreboard to score
     private Scoreboard score;
+    private Scoreboard2 scored;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -37,7 +38,8 @@ public class MyWorld extends greenfoot.World
         //adds the score to the world
         score = new Scoreboard();
         addObject(score,75,25);
-        
+        scored = new Scoreboard2();
+        addObject(scored,75,25);
     }
     
     
@@ -132,5 +134,10 @@ public class MyWorld extends greenfoot.World
     public void update()
     {
         score.addToScore();
+    }
+    
+    public void updated()
+    {
+        scored.addToScored();
     }
 }

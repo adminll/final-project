@@ -36,17 +36,17 @@ public class Lineplayer1 extends Actor
         //this bit makes it so when player2 touches this line, it deletes player2 and updates the score
         if(isTouching(Player2.class) == true)
         {   
+            ((MyWorld)getWorld()).updated();
             removeTouching(Player2.class); 
             Greenfoot.stop();
-            ((MyWorld)getWorld()).update();
         }
         
         //this bit makes it so when player1 touches the line and loopcount is over 5, it deletes the actor and updates the score
         if(isTouching(Player1.class) == true && Loopcount > 5)
         {
+            ((MyWorld)getWorld()).update();
             removeTouching(Player1.class); 
             Greenfoot.stop();
-            ((MyWorld)getWorld()).update();
         }
     }    
 }

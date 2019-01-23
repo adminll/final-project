@@ -170,7 +170,7 @@ public class Player1 extends Actor
         {
             removeTouching(Player2.class);
             Greenfoot.stop();
-            ((MyWorld)getWorld()).update();
+            ((MyWorld)getWorld()).updated();
         }
         
         //if the character touches the wall the game stops
